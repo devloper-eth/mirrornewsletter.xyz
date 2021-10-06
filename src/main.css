@@ -1,3 +1,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+	margin:  0px;
+	padding:  0px;
+	color:  white;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: 'Loos-wide';
+	font-weight: 50;
+	font-size: 40px;
+	margin-bottom: 10px;
+	word-spacing: 10px;
+}
+
+p {
+	font-family: 'Azeret Mono', monospace;
+	font-size: 18px;
+	line-height: 140%;
+	word-spacing: 2px;
+
+}
+
+a {
+	display: inline-block;
+    width: 100%;
+    margin-top: 200px;
+    color: white;
+    font-family: 'loos-wide';
+    font-style: normal;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 996px) {
+	.left {
+		width: 100% !important;
+	}
+	.interaction {
+		margin-top: 60px !important;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	p {
+		font-size: 16px;
+	}
+
+}
+
+.left {
+	background: black;
+	width: 50%;
+	height: 100vh;
+	margin:  0px;
+	padding: 0px;
+}
+
+.line {
+	border-bottom: 1px solid white;
+    width: 100%;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.email::placeholder {
+	color: white;
+}
+
+.logo {
+	margin-left: 20px;
+	margin-top:  20px;
+}
+
+.email {
+	background: none;
+    border: none;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 22px;
+    color: white;
+    width: 200px;
+}
+
+.email:focus-visible {
+	border: none;
+	outline: none;
+}
+.email:focus {
+	border: none;
+}
+
+.email:focus::-webkit-input-placeholder{
+    color: transparent!important;
+}
+.email:focus::-moz-placeholder{
+    color: transparent!important;
+}
+.email:focus:-moz-placeholder{
+    color: transparent!important;
+}
+
+.interaction {
+	margin-top: 60px;
+	position: relative;
+}
+.subscribe {
+	margin: 0px;
+    padding: 0px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 16px;
+    position: absolute;
+    right: 0px;
+    bottom: 1px;
+}
+
+.content {
+	margin-top: 100px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
