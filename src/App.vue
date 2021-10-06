@@ -6,7 +6,7 @@ import SignupForm from "./components/SignupForm.vue";
   <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
     <div class="bg-black">
       <div class="container p-12 xl:p-24 text-white">
-        <img class="h-12 w-12" src="/mirrornewsletter.svg" />
+        <a href="/"><img class="h-12 w-12" src="/mirrornewsletter.svg" /></a>
         <h1 class="mt-16 text-3xl">mirror newsletter</h1>
         <h2 class="mt-8 text-xl">
           mirrornewsletter.xyz is your weekly information source on all things NFT, web3 and DAO. All links curated by

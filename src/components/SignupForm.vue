@@ -14,12 +14,14 @@ export default {
   data: function () {
     return {
       success: null,
+      pending: false,
     };
   },
   methods: {
     async subscribe(event) {
       event.preventDefault();
       this.success = null;
+      this.pending = true;
       try {
         const res = await axios.post("https://us-central1-devloper-eth.cloudfunctions.net/mailchimp-proxy", {
           email: this.email,
@@ -29,6 +31,7 @@ export default {
         console.error(error);
         this.success = false;
       }
+      this.pending = false;
     },
   },
 };
@@ -50,7 +53,7 @@ export default {
       </div>
     </transition>
 
-    <div class="flex sm:flex-wrap" v-show="success !== true">
+    <div class="flex sm:flex-wrap" :class="{'animate-pulse': pending}" v-show="success !== true">
       <div class="flex-grow border-b-2 border-white">
         <input
           type="email"
@@ -62,8 +65,11 @@ export default {
       </div>
       <div class="flex-none border-b-2 border-white">
         <div class="inline-flex items-center">
-          <button class="cursor-pointer h-12 pr-1" type="button" @click="subscribe">
-            Subscribe<ChevronRightIcon class="inline-block font-bold h-4 w-4 -mt-1 text-white" />
+          <button class="cursor-pointer h-12 pr-1" type="button" @click="subscribe" :disabled="pending">
+            Subscribe<ChevronRightIcon
+              class="inline-block font-bold h-4 w-4 -mt-1 text-white"
+              :class="{'animate-ping': pending}"
+            />
           </button>
         </div>
       </div>
