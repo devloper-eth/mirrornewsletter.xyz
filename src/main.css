@@ -45,3 +45,12 @@
 .fade-leave-to {
   opacity: 0;
 }
+
+.header-font {
+	font-family: 'Loos-wide';
+	font-weight: 50;
+}
+
+.paragraph-font {
+	font-family: 'Azeret Mono', monospace;
+}
