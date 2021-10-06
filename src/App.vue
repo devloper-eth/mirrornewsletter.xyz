@@ -1,33 +1,31 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import SignupForm from "./components/SignupForm.vue";
 </script>
 
 <template>
-  <div class="bg-gray-50">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        <span class="block">Ready to dive in?</span>
-        <span class="block text-indigo-600">Start your free trial today.</span>
-      </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <div class="inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-            Get started
-          </a>
-        </div>
-        <div class="ml-3 inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
-            Learn more
-          </a>
-        </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 h-full">
+    <div class="bg-black">
+      <div class="container p-12 xl:p-24 text-white">
+        <img class="h-12 w-12" src="/mirrornewsletter.svg" />
+        <h1 class="mt-16 text-3xl">mirror newsletter</h1>
+        <h2 class="mt-8 text-xl">
+          mirrornewsletter.xyz is your weekly information source on all things NFT, web3 and DAO. All links curated by
+          hand (with top secret ranking algo coming soon).
+        </h2>
+        <SignupForm class="mt-12" />
+      </div>
+
+      <div class="pl-12 xl:pl-24 mb-12 mt-12 text-white bg-black">
+        built by
+        <a href="https://twitter.com/devloper_eth">@<span class="underline">devloper_eth</span></a>
       </div>
     </div>
+    <div class="hidden lg:block"><!-- empty white space --></div>
   </div>
 </template>
 
 <style>
 #app {
+  height: 100vh;
 }
 </style>
