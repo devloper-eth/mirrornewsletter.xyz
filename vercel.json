@@ -1,0 +1,14 @@
+{
+	"redirects": [
+		{
+			"source": "/issue/1",
+			"destination": "https://devloper.notion.site/Mirror-Newsletter-Issue-1-0836b595b0f24047bd4a1b4417455012",
+			"permanent": true
+		},
+		{
+			"source": "/issue/2",
+			"destination": "https://devloper.notion.site/Mirror-Newsletter-Issue-2-dafc46ac647049ec8ceafa8fc99ea0e2",
+			"permanent": true
+		}
+	]
+}
