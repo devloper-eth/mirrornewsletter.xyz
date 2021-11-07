@@ -9,6 +9,11 @@
 			"source": "/issue/2",
 			"destination": "https://devloper.notion.site/Mirror-Newsletter-Issue-2-dafc46ac647049ec8ceafa8fc99ea0e2",
 			"permanent": true
+		},
+		{
+			"source": "/issue/3",
+			"destination": "https://devloper.notion.site/Mirror-Newsletter-Issue-3-2d9d41c29bdf4141b2b0d4a4232d16e7",
+			"permanent": true
 		}
 	]
 }
